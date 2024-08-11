@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e0e0e0;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.customer-card:hover {
+  background-color: #818080 !important;
+  color: white !important;
+  outline: none;
+}
+.selected-card:hover {
+  background-color: rgb(170, 0, 0) !important;
+  color: white !important;
+}
+.customer-list-container {
+  width: 350px;
+  overflow-y: scroll;
+  height: 90vh;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.customer-list-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.customer-list-container::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.customer-list-container::-webkit-scrollbar-thumb {
+  background: #c2c1c1;
+  border-radius: 10px;
+}
+
+.details-container {
+  padding-left: 20px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  flex: 1;
+  overflow-y: scroll;
+  height: 90vh;
+  background-color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+.details-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.details-container::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.details-container::-webkit-scrollbar-thumb {
+  background: #c2c1c1;
+  border-radius: 10px;
+}
+
+.details-card {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.details-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.details-company {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.details-address {
+  font-size: 1rem;
+  color: gray;
+}
+
+.photos-section {
+  margin-top: 20px;
+}
+
+.details-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  z-index: 1;
+}
+
+.details-card .overlay .overlay-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.details-card .content {
+  position: relative;
+  z-index: 2;
+}
+
+.title-placeholder,
+.company-placeholder,
+.address-placeholder,
+.photos-placeholder {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.title-placeholder {
+  height: 40px;
+}
+
+.photos-placeholder {
+  height: 220px;
+}
